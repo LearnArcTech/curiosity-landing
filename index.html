@@ -1,124 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Curiosity</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Curiosity</title>
-</head>
-
-<body>
-
-    <nav>
-        <div class="nav-left">
-            <div class="logo">
-                <p>Curiosity</p>
-            </div>
-        </div>
-
-        <div class="navbar-right">
-            <a href="https://curiosity-webapp.vercel.app/">
-                <button class="btn btn-secondary">Iniciar sesion</button>
-            </a>
-        </div>
-    </nav>
-
-    <section class="hero-section">
-        <div class="hero-right-side">
-            <div class="hero">
-                <p class="hero-CTA">
-                    La educacion digital que simplemente funciona
-                </p>
-                <p>
-                    Transforma tu forma de aprender con una experiencia educativa interactiva, diseñada para mantenerte
-                    motivado, organizado y conectado con tu progreso académico.
-                </p>
-            </div>
-
-            <div class="hero-buttongroup">
-                <button class="btn btn-primary">Uniser a sala</button>
-                <input type="text" placeholder="Codigo" class="secondary-input">
-            </div>
-        </div>
-
-        <div class="hero-left-side">
-            <canvas class="hero-placeholder-canvas"></canvas>
-        </div>
-    </section>
-
-    <section class="features-section">
-        <div class="features-right-side">
-            <canvas class="features-placeholder-canvas"></canvas>
-        </div>
-
-        <div class="features-left-side">
-            <div class="features-wrapper">
-                <div class="features-text-wrapper">
-                    <h1>Educacion sin importar la infraestructura</h1>
-                    <p>Todo lo que necesitas para estudiar con mayor confianza, mantener el enfoque y alcanzar tus
-                        objetivos académicos de manera más eficiente.</p>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <div class="logo">
+                    <p>Curiosity</p>
                 </div>
-                <ul>
-                    <li>Modo baja conexion</li>
-                    <li>Reconexion automatica</li>
-                    <li>Conexion por llamada en caso de emergencia</li>
+            </div>
+
+            <div class="navbar-right">
+                <a href="https://curiosity-webapp.vercel.app/">
+                    <button class="btn btn-secondary">Iniciar sesion</button>
+                </a>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <div class="hero-right-side">
+                <div class="hero">
+                    <p class="hero-CTA">
+                        La educacion digital que simplemente funciona
+                    </p>
+                    <p>
+                        Transforma tu forma de aprender con una experiencia
+                        educativa interactiva, diseñada para mantenerte
+                        motivado, organizado y conectado con tu progreso
+                        académico.
+                    </p>
+                </div>
+
+                <div class="hero-buttongroup">
+                    <button class="btn btn-primary" id="join-course-btn">
+                        Unirse
+                    </button>
+                    <input
+                        type="text"
+                        id="course-code-input"
+                        placeholder="Codigo del curso"
+                        class="secondary-input"
+                    />
+                </div>
+            </div>
+
+            <div class="hero-left-side">
+                <canvas class="hero-placeholder-canvas"></canvas>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="features-right-side">
+                <canvas class="features-placeholder-canvas"></canvas>
+            </div>
+
+            <div class="features-left-side">
+                <div class="features-wrapper">
+                    <div class="features-text-wrapper">
+                        <h1>Educacion sin importar la infraestructura</h1>
+                        <p>
+                            Todo lo que necesitas para estudiar con mayor
+                            confianza, mantener el enfoque y alcanzar tus
+                            objetivos académicos de manera más eficiente.
+                        </p>
+                    </div>
+                    <ul>
+                        <li>Modo baja conexion</li>
+                        <li>Reconexion automatica</li>
+                        <li>Conexion por llamada en caso de emergencia</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us-section">
+            <h1>Acerca de nosotros</h1>
+            <p>
+                Somos un equipo dedicado a llevar la educacion a zonas de debil
+                infraestructura, con una plataforma que de verdad funcione.
+            </p>
+        </section>
+        <section class="CTA-secondary-section">
+            <h1>Interesado?</h1>
+            <a href="https://curiosity-webapp.vercel.app/">
+                <button>Registrate Gratis!</button>
+            </a>
+        </section>
+        <section class="Testimonies-section">
+            <div class="container">
+                <h2>Testimonios</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <h3>“Increible!”</h3>
+                            <p>
+                                Es un servicio revolucionando la educacion
+                                ditial!
+                            </p>
+                        </div>
+                        <span class="testimonial-author">Amanda Lockwood</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <div>
+                            <h3>“Revolucionario”</h3>
+                            <p>
+                                Ahora puedo tomar mas tiempo atendiendo las
+                                dudas de mis alumnos
+                            </p>
+                        </div>
+                        <span class="testimonial-author">Emilio Lucio</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <div>
+                            <h3>“Revolucionario”</h3>
+                            <p>Mis alumnos ahora atienden mejor mis clases!</p>
+                        </div>
+                        <span class="testimonial-author">Miguel Mark</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container footer-layout">
+                <div>&copy; 2026 Curiosity</div>
+                <ul class="footer-links">
+                    <li>
+                        <a
+                            href="https://curiosity-webapp.vercel.app/meta/Privacy"
+                            >Privacy Policy</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://curiosity-webapp.vercel.app/meta/TOS"
+                            >Terms of Service</a
+                        >
+                    </li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </footer>
+    </body>
 
-    <section class="about-us-section">
-        <h1>Acerca de nosotros</h1>
-        <p>Somos un equipo dedicado a llevar la educacion a zonas de debil infraestructura, con una plataforma que de
-            verdad funcione.</p>
-    </section>
-    <section class="CTA-secondary-section">
-        <h1>Interesado?</h1>
-        <a href="https://curiosity-webapp.vercel.app/">
-            <button>Registrate Gratis!</button>
-        </a>
-    </section>
-    <section class="Testimonies-section">
-        <div class="container">
-            <h2>Testimonios</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div>
-                        <h3>“Increible!”</h3>
-                        <p>Es un servicio revolucionando la educacion ditial!</p>
-                    </div>
-                    <span class="testimonial-author">Amanda Lockwood</span>
-                </div>
-                <div class="testimonial-card">
-                    <div>
-                        <h3>“Revolucionario”</h3>
-                        <p>Ahora puedo tomar mas tiempo atendiendo las dudas de mis alumnos</p>
-                    </div>
-                    <span class="testimonial-author">Emilio Lucio</span>
-                </div>
-                <div class="testimonial-card">
-                    <div>
-                        <h3>“Revolucionario”</h3>
-                        <p>Mis alumnos ahora atienden mejor mis clases!</p>
-                    </div>
-                    <span class="testimonial-author">Miguel Mark</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container footer-layout">
-            <div>&copy; 2026 Curiosity</div>
-            <ul class="footer-links">
-                <li><a href="#accessibility">Accessibility Settings</a></li>
-                <li><a href="#help-center">Help Center</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms of Service</a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-
+    <script src="./index.js"></script>
 </html>
